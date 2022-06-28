@@ -1,11 +1,9 @@
 <x-layout>
-    <x-section>
-        Hello World
-    </x-section>
-    <x-section>
-        Hello World
-    </x-section>
-    <x-section>
-        Hello World
-    </x-section>
+    <x-flash type="error">
+        Oops! bad request
+    </x-flash>
+    <br>
+    <x-flash class="mt-10" data-flash="foobar">
+        Greart job!"
+    </x-flash>
 </x-layout>
