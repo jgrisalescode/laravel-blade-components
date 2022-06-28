@@ -29,3 +29,10 @@ Route::patch('/comments/{comment}', function (Comment $comment) {
 
     return redirect()->route('comments.edit', $comment);
 })->name('comments.update');
+
+Route::delete('/comments/{comment}', function (Comment $comment) {
+    // authorice the request
+    $comment->delete();
+    return redirect('/');
+
+})->name('comments.delete');
